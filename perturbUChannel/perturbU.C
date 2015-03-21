@@ -1,12 +1,10 @@
 /*---------------------------------------------------------------------------*\
-  =========                 |
-  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
-   \\    /   O peration     |
-    \\  /    A nd           | Copyright (C) 1991-2005 OpenCFD Ltd.
-     \\/     M anipulation  |
+Date: June 24, 2005
+Author: Eugene de Villiers
+Source: http://www.cfd-online.com/Forums/openfoam-solving/58043-les-2.html#post187619
 -------------------------------------------------------------------------------
 License
-    This file is part of OpenFOAM.
+    This file is a derivative work of OpenFOAM.
 
     OpenFOAM is free software; you can redistribute it and/or modify it
     under the terms of the GNU General Public License as published by the
@@ -38,7 +36,6 @@ Description
         Fluid Dynamics Research, Vol 26, pp119-139, 2000.
 
 \*---------------------------------------------------------------------------*/
-
 
 #include "fvCFD.H"
 #include "Random.H"

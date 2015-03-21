@@ -1,27 +1,41 @@
-// The FOAM Project // File: perturbU.C
-/*
+/*---------------------------------------------------------------------------*\
+Date: March 2, 2007
+Author: Eugene de Villiers
+Source: http://www.cfd-online.com/Forums/openfoam-solving/58905-les-turbulent-pipe-flow-2.html#post192103
 -------------------------------------------------------------------------------
- =========         | Application
- \\      /         |
-  \\    /          | Name:   Ucomponents
-   \\  /           | Family: Utility
-    \\/            |
-    F ield         | FOAM version: 1.9.5
-    O peration     |
-    A and          | Copyright (C) 1991-1999 Henry G Weller
-    M anipulation  |          All Rights Reserved.
--------------------------------------------------------------------------------
-APPLICATION
+License
+    This file is a derivative work of OpenFOAM.
+
+    OpenFOAM is free software; you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the
+    Free Software Foundation; either version 2 of the License, or (at your
+    option) any later version.
+
+    OpenFOAM is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+    for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with OpenFOAM; if not, write to the Free Software Foundation,
+    Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
+Application
     perturbU
 
-DESCRIPTION
-    initialise laminar velocity with superimposed streamwise streaks
+Description
+    initialise channel velocity with superimposed streamwise streaks.
+    To be used to force channelOodles to transition and reach a fully
+    developed flow sooner.
 
-AUTHOR
-    Eugene de Villiers
+    Reads in perturbUDict.
 
--------------------------------------------------------------------------------
-*/
+    EdV from paper:
+        Schoppa, W. and Hussain, F.
+        "Coherent structure dynamics in near wall turbulence",
+        Fluid Dynamics Research, Vol 26, pp119-139, 2000.
+
+\*---------------------------------------------------------------------------*/
 
 #include "fvCFD.H"
 #include "Random.H"

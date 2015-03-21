@@ -10,12 +10,7 @@ FoamFile
 {
     version         2.0;
     format          ascii;
-
-    root            "/home/penfold/mattijs/foam/mattijs2.1/run/icoFoam";
-    case            "cavity";
     instance        "system";
-    local           "";
-
     class           dictionary;
     object          perturbUDict;
 }
