@@ -45,7 +45,6 @@ Description
 
 int main(int argc, char *argv[])
 {
-#   include "addLatestTimeOption.H"
 #   include "setRootCase.H"
 
 #   include "createTime.H"

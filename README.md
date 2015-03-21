@@ -1,7 +1,7 @@
 perturbU
 ========
 
-A pair of utilities for initializing fields for LES simulations for OpenFOAM.
+A few utilities for initializing fields for LES simulations for OpenFOAM.
 
 These utilities were created by Eugene de Villiers and are related to his PhD Thesis "The Potential of Large Eddy Simulation for the Modeling of Wall Bounded Flows", available here: http://foamcfd.org/resources/theses.html
 
