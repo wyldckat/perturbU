@@ -125,10 +125,10 @@ int main(int argc, char *argv[])
     //wall normal circulation
     const scalar duplus = Ubar.value().x()*0.25/utau;
     //spanwise wavenumber: spacing z+ = 200
-    const scalar betaPlus = 2.0*mathematicalConstant::pi*(1.0/200.0);
+    const scalar betaPlus = 2.0*constant::mathematical::pi*(1.0/200.0);
     const scalar sigma = 0.00055;
     //streamwise wave number: spacing x+ = 500
-    const scalar alphaPlus = 2.0*mathematicalConstant::pi*(1.0/500.0);
+    const scalar alphaPlus = 2.0*constant::mathematical::pi*(1.0/500.0);
     const scalar epsilon = Ubar.value().x()/200.0;
 
     const vectorField& centres(mesh.C());
