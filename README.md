@@ -5,7 +5,7 @@ A few utilities for initializing fields for LES simulations for OpenFOAM.
 
 These utilities were created by Eugene de Villiers and are related to his PhD Thesis "The Potential of Large Eddy Simulation for the Modeling of Wall Bounded Flows", available here: http://foamcfd.org/resources/theses.html
 
-This repository at https://github.com/wyldckat/perturbU has been created by Bruno Santos (wyldckat@GitHub working at [blueCAPE Lda](www.bluecape.com.pt)) to assist in maintaining an easier way to keep updating the code to be usable with the latest OpenFOAM versions.
+This repository at https://github.com/wyldckat/perturbU has been created by Bruno Santos (wyldckat@GitHub working at [blueCAPE Lda](http://www.bluecape.com.pt)) to assist in maintaining an easier way to keep updating the code to be usable with the latest OpenFOAM versions.
 
 For more details on how to use these utilities, please see the related wiki page: http://openfoamwiki.net/index.php/Contrib/perturbU
 
