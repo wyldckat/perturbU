@@ -40,7 +40,6 @@ Description
 #include "fvCFD.H"
 #include "Random.H"
 #include "wallDist.H"
-#include "wallDistReflection.H"
 #include "mathematicalConstants.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -70,13 +69,12 @@ int main(int argc, char *argv[])
     //diffuse the perturbations, preventing transition in some cases
     
     
-    wallDist yw(mesh);
+    wallDist yWD(mesh);
+    const volScalarField& yw = yWD.y();
     const scalar h = max(yw.internalField());
     
     //local yDir
-    wallDistReflection reflexVec(mesh);
-    
-    const volVectorField yDir = reflexVec.n();
+    const volVectorField yDir = yWD.n();
 
 
     IOobject Uheader
