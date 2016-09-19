@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
     
     wallDist yWD(mesh);
     const volScalarField& yw = yWD.y();
-    const scalar h = max(yw.internalField());
+    const scalar h = max(yw.internalField()).value();
     
     //local yDir
     const volVectorField yDir = yWD.n();
