@@ -136,7 +136,7 @@ int main(int argc, char *argv[])
     forAll(centres, celli)
     {
         //add a small random component to enhance symmetry breaking
-        scalar deviation=1.0 + 0.1*perturbation.GaussNormal();
+        scalar deviation=1.0 + 0.1*perturbation.GaussNormal<scalar>();
         const vector& cCentre = centres[celli];
 
         vector zDir = xDir^yDir[celli];

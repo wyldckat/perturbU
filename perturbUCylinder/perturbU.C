@@ -63,9 +63,6 @@ int main(int argc, char *argv[])
         IOobject::MUST_READ
     );
 
-    // Check U exists
-    if (Uheader.headerOk())
-    {
         Info<< "    Reading U" << endl;
         volVectorField U(Uheader, mesh);
         const scalar Retau = 300;
@@ -134,11 +131,6 @@ int main(int argc, char *argv[])
         }
 
         U.write();
-    }
-    else
-    {
-        Info<< "    No U" << endl;
-    }
 
     Info<< endl;
 
