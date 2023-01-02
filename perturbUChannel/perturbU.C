@@ -170,7 +170,7 @@ int main(int argc, char *argv[])
     forAll(centres, celli)
     {
         // add a small (+/-20%) random component to enhance symetry breaking
-        scalar deviation=1.0 + 0.2*perturbation.GaussNormal();
+        scalar deviation=1.0 + 0.2*perturbation.scalarNormal();
 
         const vector& cCentre = centres[celli];
 
